@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Solitaire</title>
+  <link rel="stylesheet" href="./assets/css/styless.css" />
+</head>
+<body>
+  <h1>Solitaire</h1>
+
+  <!-- Game Info: Timer and Score -->
+  <div id="game-info">
+    ⏱ Time: <span id="timer">0</span> sec |
+    🏆 Score: <span id="score">0</span>
+  </div>
+
+  <!-- Controls -->
+  <div class="controls">
+    <button onclick="undo()">Undo</button>
+    <button onclick="redo()">Redo</button>
+    <button onclick="initGame()">Restart</button>
+  </div>
+
+  <!-- Game Area -->
+  <div class="game-container">
+    <div class="top-row">
+      <div id="stock" class="pile stock"></div>
+      <div id="waste" class="pile waste"></div>
+      <div class="foundations">
+        <div id="foundation-0" class="pile foundation"></div>
+        <div id="foundation-1" class="pile foundation"></div>
+        <div id="foundation-2" class="pile foundation"></div>
+        <div id="foundation-3" class="pile foundation"></div>
+      </div>
+    </div>
+    <div id="tableau-row" class="tableau-row"></div>
+  </div>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>

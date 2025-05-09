@@ -1,0 +1,86 @@
+/* General Styles */
+body {
+  font-family: sans-serif;
+  background: green;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+#game-info {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.controls {
+  margin-bottom: 15px;
+}
+
+button {
+  margin: 0 5px;
+  padding: 8px 16px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+/* Layout */
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.foundations {
+  display: flex;
+  gap: 10px;
+}
+
+.tableau-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Piles and Cards */
+.pile {
+  width: 80px;
+  height: 120px;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+.card {
+  width: 80px;
+  height: 120px;
+  background: white;
+  color: black;
+  border: 1px solid black;
+  position: absolute;
+  transition: transform 0.3s ease;
+}
+
+.face-down {
+  background: navy;
+  color: navy;
+}
+
+.red {
+  color: red;
+}
+
+.card.dragging {
+  opacity: 0.5;
+}
